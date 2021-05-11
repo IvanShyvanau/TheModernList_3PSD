@@ -1,0 +1,134 @@
+.header{
+  width: 100%;
+  height: 601px;
+  background-color: #660000;
+  &::before {
+      content: ' ';
+      position: absolute;
+      opacity: 0.6;
+      background-color: #000000;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 601px;
+
+    }
+  }
+
+
+.navigation{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header__logo{
+  margin-top: 42px;
+}
+
+.first-part{
+  @extend %font-prim;
+  @include font($height: 1rem, $size: 2.8rem, $weigh: normal);
+  color:#FFFFFF;
+}
+
+.second-part{
+  @extend %font-prim;
+  @include font($height: 1rem, $size: 1.1rem, $weigh: normal);
+  color:#979797;
+  margin: 6px 0;
+  padding: 0;
+} 
+
+.header__navigation{
+  margin-top: 40px;
+}
+
+
+.navigation__link{
+  @extend %font-prim;
+  @include font($height: 1rem, $size: 1.3rem, $weigh: normal);
+  position: relative;
+  color: #979797;
+  cursor: pointer;
+  margin-left: 41px;
+  padding: 14px 6px;
+  &:hover{
+    background-color: $color-primary;
+    color: #FFFFFF;
+    z-index: 2;
+    border-radius: 10px;
+  }
+}
+
+.text{
+  content: " ";
+  position: relative;
+  z-index: 99999;
+}
+
+.slider{
+  display: flex;
+  width: 100%;
+
+}
+
+.description{
+margin-left: 183px;
+width: 40%;
+}
+
+.description-title{
+color: #FFFFFF;
+width: 70%;
+margin-top: 141px;
+position: relative;
+}
+
+.description-text{
+color: #979797;
+width: 70%;
+text-align: left
+}
+
+.button{
+  @extend %font-prim;
+  @include font($height: 1rem, $size: 1.3rem, $weigh: normal);
+  color: #FFFFFF;
+  padding: 13px 17px;
+  border-radius: 10px;
+  background-color: $color-primary;
+  margin-top: 19px;
+  position: relative;
+  outline: none;
+  &:hover{
+    background-color: $color-primary;
+  }
+}
+
+.carousel{
+  margin-top: 53px;
+  width: 55%;
+  height: 431px;
+  margin-right: 200px;
+}
+
+.d-block{
+  
+}
+.w-100{
+  background-color: #6B6B6B;
+  background-image: url(/app/images/99.png);
+  width: 100%;
+  height: 431px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev{
+
+}
+
+//доделать слайдер

@@ -1,0 +1,12 @@
+%transition {
+  transition: all .3s ease-out;
+}
+
+%font-prim { 
+    font-family: 'Georgia';
+    src: url('/app/fonts/Georgia.woff2') format('woff2'),
+         url('/app/fonts/Georgia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

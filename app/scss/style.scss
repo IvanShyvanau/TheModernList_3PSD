@@ -1,9 +1,16 @@
-body{
-  margin: 0;
-  background-color: #e000ff;
-}
+//base
+@import"base/_normolize";
+//abstract
+@import"abstract/_constants";
+@import"abstract/_placeholders";
+@import"abstract/_mixin";
 
+//base
+@import"base/_base";
 
-.test{
-  margin: 10px;
-}
+//components
+@import"components/_header";
+@import"components/_service";
+
+//layouts
+@import"layouts/_wrapper";
