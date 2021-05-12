@@ -25,6 +25,7 @@
   @extend %transition;
   &:hover{
     background-color: $color-primary;
+    color: #000;
   }
   &:hover .title-image{
     background-color: #FFFFFF

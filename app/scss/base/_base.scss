@@ -18,7 +18,7 @@ h2{
   @include font($height: 5.4rem, $size: 3.2rem);
   } 
 
-h1{
+h3{
   @extend %font-prim;
   @include font($height: 5.4rem, $size: 1.6rem);
   } 
