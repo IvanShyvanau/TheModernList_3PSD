@@ -1,0 +1,95 @@
+.examples-title{
+  width: 100%;
+  height: 120px;
+  background-color: #660000;
+  display: flex;
+  justify-content: center;
+}
+
+.examples__title{
+  width: 90%;
+  height: 100px;
+  display: flex;
+  position: relative;
+  padding-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.line{
+  width: 100%;
+  height: 4px;
+  background-color: #303030;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+.title{
+  color: #FFFFFF;
+  width: 18%;
+  padding: 16px 12px;
+  background-color: #303030;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.examples{
+  width: 100%;
+  height: 520px;
+  background-color: #660000;
+}
+
+.examples-container{
+  width: 90%; 
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.examples__block{
+  width: 32%;
+  height: 201px;
+  border: 4px solid #fff;
+  margin-top: 29px;
+  color: #fff;
+  &:hover{
+    background-color: #353535;
+    border: 4px solid $color-primary;
+  }
+  &:hover .examples-text{
+    display: none;
+  }
+}
+
+.examples-image{
+  width: 100%;
+  height: 165px;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend %font-prim;
+  @include font($height: 1.2rem, $size: 1.8rem, $weigh: normal);
+  color: #FFFFFF;
+
+}
+
+.examples-text{
+  width: 100%;
+  height: 28px;
+  background-color: #000;
+  opacity: 0.6;
+  @extend %font-prim;
+  @include font($height: 1.2rem, $size: 1.4rem, $weigh: normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
