@@ -1,0 +1,44 @@
+.footer{
+  width: 100%;
+  height: 62px;
+  background-color: #2B2B2B;
+  color: #979797;
+  @extend %font-prim;
+  @include font($height: 5.4rem, $size: 1.3rem);
+  @include media-mobile{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.border__top{
+width: 100%;
+height: 2px;
+background-color: #000000;
+}
+
+.fotter-info{
+  display: flex;
+  justify-content: space-around;
+  @include media-mobile{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.domain{
+  @include media-mobile{
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+.template{
+  @include media-mobile{
+    width: 100%;
+    font-size: 1.2rem;
+    margin-left: 75px;
+  }
+}

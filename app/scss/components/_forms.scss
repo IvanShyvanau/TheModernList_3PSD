@@ -7,16 +7,26 @@ justify-content: center;
 @extend %font-prim;
   @include font($height: 2.0rem, $size: 1.3rem);
   color: #979797;
+  @include media-mobile{
+    height: 1500px;
+  }
 }
 
 .forms-container{
   width: 90%;
   display: flex;
   justify-content: space-between;
+  @include media-mobile{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .form__blocks{
   width: 25%;
+  @include media-mobile{
+    width: 100%;
+  }
 }
 
 .forms-titles{
@@ -148,5 +158,10 @@ justify-content: center;
   outline: none;
   border: none;
   margin-top: 9px;
-
+  @include media-mobile{
+    padding: 12px 30px;
+    font-size: 1.8rem;
+    display: flex;
+    margin-left: 70px;
+  }
 }
